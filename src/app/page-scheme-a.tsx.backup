@@ -1,0 +1,53 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { MetalButton } from "@/components/ui/metal-button";
+import { ArrowUpRight, Sparkles } from "lucide-react";
+
+export default function Home() {
+  return (
+    <main className="relative min-h-screen w-full flex flex-col justify-center px-12 md:px-24 overflow-hidden">
+      
+      {/* Cinematic Background Video */}
+      <video
+        src="/portfolio/home/VE2308_TanWeeRou_2308200.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover -z-20"
+      />
+      {/* Dark Overlay for text readability */}
+      <div className="absolute inset-0 bg-black/60 -z-10 pointer-events-none" />
+
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+        className="max-w-4xl"
+      >
+        <h1 className="text-6xl md:text-8xl font-light tracking-tighter leading-[0.9]">
+          CREATIVE <br />
+          <span className="font-serif italic text-muted-foreground">DIRECTOR</span> <br />
+          & VFX ARTIST
+        </h1>
+        
+        <p className="mt-12 text-lg md:text-xl text-muted-foreground max-w-xl font-light leading-relaxed mb-12">
+          Specializing in Character FX, Effects, Lighting, and Compositing. Bringing imagination to reality through computation and light.
+        </p>
+
+        <div className="flex flex-wrap items-center gap-5">
+          <MetalButton preset="chromatic">
+            <Sparkles className="size-4" />
+            View Showreel
+          </MetalButton>
+          <MetalButton preset="silver">Get in Touch</MetalButton>
+          <MetalButton preset="gold">
+            Resume
+            <ArrowUpRight className="size-4" />
+          </MetalButton>
+        </div>
+      </motion.div>
+    </main>
+  );
+}

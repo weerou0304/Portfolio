@@ -1,0 +1,121 @@
+                <motion.div 
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: false, margin: "-40% 0px -40% 0px" }}
+                  className="relative pl-10 md:pl-16 transition-opacity"
+                >
+                  <motion.div 
+                    initial={{ backgroundColor: "rgba(255,255,255,0.2)", boxShadow: "0px 0px 0px rgba(255,255,255,0)" }}
+                    whileInView={{ backgroundColor: "rgba(255,255,255,1)", boxShadow: "0px 0px 15px rgba(255,255,255,0.8)" }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: false, margin: "-40% 0px -40% 0px" }}
+                    className="absolute top-1.5 -left-[5px] w-2 h-2 rounded-full z-10" 
+                  />
+                  
+                  <div className="text-white/40 text-[10px] md:text-xs tracking-widest uppercase mb-3">
+                    Aug 2026 <span className="mx-2">|</span> Bandar Sunway
+                  </div>
+                  <h4 className="text-xl md:text-2xl font-light mb-1 text-white/80">Graduated from The One Academy</h4>
+                  <ul className="space-y-2 text-white/50 text-sm font-light leading-relaxed list-disc list-outside ml-4 mt-3 max-w-2xl">
+                    <li>Completed Diploma in Visual Effect.</li>
+                  </ul>
+                </motion.div>
+
+                {/* Event 1 */}
+                <motion.div 
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: false, margin: "-40% 0px -40% 0px" }}
+                  className="relative pl-10 md:pl-16 transition-opacity"
+                >
+                  <motion.div 
+                    initial={{ backgroundColor: "rgba(255,255,255,0.2)", boxShadow: "0px 0px 0px rgba(255,255,255,0)" }}
+                    whileInView={{ backgroundColor: "rgba(255,255,255,1)", boxShadow: "0px 0px 15px rgba(255,255,255,0.8)" }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: false, margin: "-40% 0px -40% 0px" }}
+                    className="absolute top-1.5 -left-[5px] w-2 h-2 rounded-full z-10" 
+                  />
+                  
+                  <div className="text-white/50 text-xs tracking-widest uppercase mb-4">
+                    Jan 2023 — Jul 2023 <span className="mx-2">|</span> Cheras
+{/* Event 2 */}
+                <motion.div 
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: false, margin: "-40% 0px -40% 0px" }}
+                  className="relative pl-10 md:pl-16 transition-opacity"
+                >
+                  <motion.div 
+                    initial={{ backgroundColor: "rgba(255,255,255,0.2)", boxShadow: "0px 0px 0px rgba(255,255,255,0)" }}
+                    whileInView={{ backgroundColor: "rgba(255,255,255,1)", boxShadow: "0px 0px 15px rgba(255,255,255,0.8)" }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: false, margin: "-40% 0px -40% 0px" }}
+                    className="absolute top-1.5 -left-[5px] w-2 h-2 rounded-full z-10" 
+                  />
+                  
+                  <div className="text-white/40 text-[10px] md:text-xs tracking-widest uppercase mb-3">
+                    Aug 2023 <span className="mx-2">|</span> Bandar Sunway
+                  </div>
+                  <h4 className="text-xl md:text-2xl font-light mb-1 text-white/80">Enrolled at The One Academy</h4>
+                  <ul className="space-y-2 text-white/50 text-sm font-light leading-relaxed list-disc list-outside ml-4 mt-3 max-w-2xl">
+                    <li>Began journey in Visual Effects.</li>
+                  </ul>
+                </motion.div>
+
+                {/* Event 3 */}
+                <motion.div 
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: false, margin: "-40% 0px -40% 0px" }}
+                  className="relative pl-10 md:pl-16 transition-opacity"
+                >
+                  <motion.div 
+                    initial={{ backgroundColor: "rgba(255,255,255,0.2)", boxShadow: "0px 0px 0px rgba(255,255,255,0)" }}
+                    whileInView={{ backgroundColor: "rgba(255,255,255,1)", boxShadow: "0px 0px 15px rgba(255,255,255,0.8)" }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: false, margin: "-40% 0px -40% 0px" }}
+                    className="absolute top-1.5 -left-[5px] w-2 h-2 rounded-full z-10" 
+                  />
+                  
+                  <div className="text-white/50 text-xs tracking-widest uppercase mb-4">
+                    Apr 2024 — Present <span className="mx-2">|</span> Subang Jaya
+                  </div>
+                  <h4 className="text-2xl md:text-3xl font-light mb-2">Design Team, Stun PC Trading</h4>
+                  <ul className="space-y-4 text-white/70 font-light leading-relaxed list-disc list-outside ml-4 mt-6 max-w-2xl">
+                    <li>Designed banners and branding visuals for online platforms.</li>
+                    <li>Helped build brand identity and improved overall brand awareness.</li>
+                  </ul>
+                </motion.div>
+
+                {/* Event 4 */}
+                <motion.div 
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: false, margin: "-40% 0px -40% 0px" }}
+                  className="relative pl-10 md:pl-16 transition-opacity"
+                >
+                  <motion.div 
+                    initial={{ backgroundColor: "rgba(255,255,255,0.2)", boxShadow: "0px 0px 0px rgba(255,255,255,0)" }}
+                    whileInView={{ backgroundColor: "rgba(255,255,255,1)", boxShadow: "0px 0px 15px rgba(255,255,255,0.8)" }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: false, margin: "-40% 0px -40% 0px" }}
+                    className="absolute top-1.5 -left-[5px] w-2 h-2 rounded-full z-10" 
+                  />
+                  
+                  <div className="text-white/50 text-xs tracking-widest uppercase mb-4">
+                    Jul 2026 — Aug 2026 <span className="mx-2">|</span> Subang Jaya
+                  </div>
+                  <h4 className="text-2xl md:text-3xl font-light mb-2">Video Editor (Freelance)</h4>
+                  <ul className="space-y-4 text-white/70 font-light leading-relaxed list-disc list-outside ml-4 mt-6 max-w-2xl">
+                    <li>Created short-form promo and social media videos from start to finish.</li>
+                    <li>Communicated with clients to understand their needs and adjusted videos based on feedback.</li>
+                    <li>Handled multiple projects at the same time and always delivered on time.</li>
+                  </ul>
+                </motion.div>
+
+                
