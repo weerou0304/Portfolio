@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Tan Wee Rou - Compositor Resume</title>
+  <title>Tan Wee Rou - VFX Compositor Resume</title>
   <style>
     @page {
       size: A4 portrait;
-      margin: 18mm 18mm 18mm 18mm;
+      margin: 13mm 16mm 13mm 16mm;
     }
 
     * {
@@ -19,8 +19,8 @@
       font-family: Georgia, 'Times New Roman', Times, serif;
       color: #1a1a1a;
       background-color: #ffffff;
-      line-height: 1.45;
-      font-size: 10.5pt;
+      line-height: 1.4;
+      font-size: 9.5pt;
       -webkit-font-smoothing: antialiased;
       width: 100%;
     }
@@ -34,27 +34,42 @@
       text-decoration: underline;
     }
 
+    /* Header */
     .header {
       text-align: center;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
     }
 
     .header h1 {
       font-size: 17pt;
       font-weight: 700;
-      letter-spacing: 0.02em;
-      margin-bottom: 8px;
+      letter-spacing: 0.03em;
+      margin-bottom: 4px;
       color: #111;
     }
 
     .header .contact-info {
-      font-size: 9pt;
-      color: #222;
+      font-size: 8.5pt;
+      color: #333;
       line-height: 1.4;
+      margin-bottom: 5px;
     }
 
-    .header .contact-info a {
-      color: #111;
+    .header .showreel-banner {
+      display: inline-block;
+      font-size: 9pt;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: #000;
+      background: #f4f4f4;
+      border: 1px solid #ddd;
+      padding: 3px 14px;
+      border-radius: 4px;
+      margin-top: 3px;
+    }
+
+    .header .showreel-banner a {
+      color: #000;
       text-decoration: underline;
       text-underline-offset: 2px;
     }
@@ -63,105 +78,112 @@
       width: 100%;
       height: 1px;
       background-color: #222;
-      margin: 12px 0;
+      margin: 8px 0;
     }
 
+    /* Standard Two-Column Section Layout */
     .section {
       display: flex;
       align-items: flex-start;
-      margin: 11px 0;
+      margin: 7px 0;
     }
 
     .section-title {
-      width: 26%;
-      font-size: 9.5pt;
-      font-weight: 600;
+      width: 25%;
+      font-size: 9pt;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.04em;
       color: #111;
-      padding-right: 15px;
+      padding-right: 14px;
       flex-shrink: 0;
+      line-height: 1.35;
     }
 
     .section-content {
-      width: 74%;
+      width: 75%;
       flex-grow: 1;
     }
 
     /* About Me */
     .about-text {
-      font-size: 9.5pt;
-      line-height: 1.5;
+      font-size: 9pt;
+      line-height: 1.45;
       color: #222;
       text-align: justify;
     }
 
-    /* Areas of Expertise */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5px 30px;
-      font-size: 9.5pt;
-      color: #222;
+    /* Technical Skills */
+    .skills-group {
+      margin-bottom: 5px;
     }
 
-    /* Employment History */
-    .job-item {
-      margin-bottom: 11px;
-    }
-
-    .job-item:last-child {
+    .skills-group:last-child {
       margin-bottom: 0;
     }
 
-    .job-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 3px;
-    }
-
-    .job-date {
-      width: 28%;
+    .skills-label {
+      font-weight: 700;
+      color: #111;
       font-size: 9pt;
-      color: #222;
-      flex-shrink: 0;
+      display: inline;
     }
 
-    .job-details {
-      width: 72%;
+    .skills-list {
+      font-size: 9pt;
+      color: #2b2b2b;
+      display: inline;
     }
 
-    .job-header {
+    /* Projects & Work Experience Common Styles */
+    .item-block {
+      margin-bottom: 8px;
+    }
+
+    .item-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
 
-    .job-title {
-      font-size: 9.5pt;
-      font-weight: 600;
+    .item-title {
+      font-size: 9pt;
+      font-weight: 700;
       color: #111;
     }
 
-    .job-location {
-      font-size: 9pt;
+    .item-role {
+      font-size: 8.5pt;
+      font-style: italic;
+      color: #444;
+      margin-left: 6px;
+      font-weight: 400;
+    }
+
+    .item-meta {
+      font-size: 8.5pt;
       color: #333;
       text-align: right;
+      white-space: nowrap;
+      font-weight: 500;
     }
 
-    .job-bullets {
+    .item-bullets {
       list-style-type: disc;
-      padding-left: 18px;
-      margin-top: 3px;
+      padding-left: 16px;
+      margin-top: 2px;
     }
 
-    .job-bullets li {
-      font-size: 9pt;
-      line-height: 1.45;
+    .item-bullets li {
+      font-size: 8.5pt;
+      line-height: 1.4;
       color: #2b2b2b;
-      margin-bottom: 2px;
+      margin-bottom: 1.5px;
     }
 
     /* Education */
@@ -169,45 +191,42 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      font-size: 9.5pt;
-      margin-bottom: 2px;
+      font-size: 9pt;
+      margin-bottom: 1.5px;
     }
 
     .education-title {
-      font-weight: 600;
+      font-weight: 700;
       color: #111;
     }
 
     .education-date {
-      font-size: 9pt;
+      font-size: 8.5pt;
       color: #333;
       text-align: right;
     }
 
     .education-school {
-      font-size: 9pt;
+      font-size: 8.5pt;
       color: #2b2b2b;
     }
 
     /* Languages */
     .languages-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5px 30px;
-      font-size: 9.5pt;
-      width: 100%;
+      display: flex;
+      gap: 28px;
+      font-size: 8.5pt;
+      align-items: baseline;
     }
 
     .lang-item {
       display: flex;
-      align-items: baseline;
-      gap: 12px;
+      gap: 6px;
     }
 
     .lang-name {
-      font-weight: 500;
+      font-weight: 700;
       color: #111;
-      min-width: 62px;
     }
 
     .lang-level {
@@ -221,10 +240,13 @@
   <header class="header">
     <h1>Tan Wee Rou, Compositor</h1>
     <div class="contact-info">
-      12, Jalan SH 3, Kajang 43000, Malaysia &nbsp;&bull;&nbsp; 
-      012-6618172 &nbsp;&bull;&nbsp; 
+      Kajang, Malaysia &nbsp;&bull;&nbsp; 
+      +60 12-661 8172 &nbsp;&bull;&nbsp; 
       <a href="mailto:weerou0304@gmail.com">weerou0304@gmail.com</a> &nbsp;&bull;&nbsp; 
       <a href="https://portfolio-wee-rou.vercel.app/" target="_blank">portfolio-wee-rou.vercel.app</a>
+    </div>
+    <div class="showreel-banner">
+      SHOWREEL &amp; PORTFOLIO: <a href="https://portfolio-wee-rou.vercel.app/" target="_blank">https://portfolio-wee-rou.vercel.app</a>
     </div>
   </header>
 
@@ -235,86 +257,101 @@
     <div class="section-title">About Me</div>
     <div class="section-content">
       <p class="about-text">
-        Visual Effects graduate passionate about compositing and visual storytelling. Skilled in NukeX, Maya, and Houdini through hands-on project experience. A good team player who is always eager to learn, improve, and bring creative ideas to life on screen.
+        Visual Effects graduate from <strong>The One Academy</strong> passionate about digital compositing and cinematic storytelling. Skilled in NukeX, Maya, and Houdini with hands-on experience in multi-pass CG integration, camera tracking, and roto/paint clean-up. Adaptable, collaborative, and dedicated to contributing high-quality shots to professional VFX pipelines.
       </p>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- Areas of Expertise -->
+  <!-- Technical Skills -->
   <section class="section">
-    <div class="section-title">Areas of Expertise</div>
+    <div class="section-title">Technical Skills</div>
     <div class="section-content">
-      <div class="skills-grid">
-        <div>NukeX</div>
-        <div>Maya</div>
-        <div>Houdini</div>
-        <div>ZBrush</div>
-        <div>After Effects</div>
-        <div>Premiere Pro</div>
+      <div class="skills-group">
+        <span class="skills-label">Core Compositing:</span>
+        <span class="skills-list"> Multi-pass EXR CG Integration, Green/Blue Screen Keying, Rotoscoping, Clean-up / Wire Removal, Camera Tracking &amp; Matchmove, Lookdev, Color Grading, Deep Compositing.</span>
+      </div>
+      <div class="skills-group">
+        <span class="skills-label">Software:</span>
+        <span class="skills-list"> NukeX, Maya, Houdini, ZBrush, PFTrack, After Effects, Premiere Pro.</span>
       </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- Employment History -->
+  <!-- Selected VFX Projects (Prominently Placed!) -->
   <section class="section">
-    <div class="section-title">Employment History</div>
+    <div class="section-title">Selected VFX Projects</div>
     <div class="section-content">
       
-      <!-- Stun PC Trading -->
-      <div class="job-item">
-        <div class="job-row">
-          <div class="job-date">Feb 2024</div>
-          <div class="job-details">
-            <div class="job-header">
-              <span class="job-title">Design Team, Stun PC Trading</span>
-              <span class="job-location">Subang Jaya</span>
-            </div>
-            <ul class="job-bullets">
-              <li>Designed banners and branding visuals for online platforms.</li>
-              <li>Helped build brand identity and improved overall brand awareness.</li>
-            </ul>
+      <!-- Jack Sparrow Project -->
+      <div class="item-block">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Jack Sparrow Digital Double &amp; Lookdev</span>
+            <span class="item-role">Lead Compositing &amp; CFX</span>
           </div>
+          <span class="item-meta">Academic Project</span>
         </div>
+        <ul class="item-bullets">
+          <li>Executed photorealistic multi-pass EXR CG compositing in NukeX, seamlessly integrating complex 3D character assets (Maya, Houdini, ZBrush) with digital background elements.</li>
+          <li>Handled precision camera solve/tracking, roto clean-up, depth/atmosphere matching, motion blur, and final lookdev color grade to achieve cinematic fidelity.</li>
+        </ul>
       </div>
 
-      <!-- Freelance Video Editor -->
-      <div class="job-item">
-        <div class="job-row">
-          <div class="job-date">Jul 2024 &mdash; Aug 2024</div>
-          <div class="job-details">
-            <div class="job-header">
-              <span class="job-title">Video Editor, Freelance</span>
-              <span class="job-location">Subang Jaya</span>
-            </div>
-            <ul class="job-bullets">
-              <li>Created short-form promo and social media videos from start to finish.</li>
-              <li>Communicated with clients to understand their needs and adjusted videos based on feedback.</li>
-              <li>Handled multiple projects at the same time and always delivered on time.</li>
-            </ul>
+      <!-- Short Films -->
+      <div class="item-block">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Rose and I &amp; I Will Love You Eternity</span>
+            <span class="item-role">Director &amp; Post-Production Lead</span>
           </div>
+          <span class="item-meta">Short Films</span>
         </div>
+        <ul class="item-bullets">
+          <li>Directed and supervised end-to-end post-production pipelines, overseeing narrative editorial pacing, visual continuity, and delivery.</li>
+          <li>Executed VFX shot integration, screen replacement, rig removal, and comprehensive cinematic color grading for festival exhibition.</li>
+        </ul>
       </div>
 
-      <!-- Propnex Realty -->
-      <div class="job-item">
-        <div class="job-row">
-          <div class="job-date">Jan 2023 &mdash; Jul 2023</div>
-          <div class="job-details">
-            <div class="job-header">
-              <span class="job-title">Sales Executive, Propnex Realty</span>
-              <span class="job-location">Cheras</span>
-            </div>
-            <ul class="job-bullets">
-              <li>Talked with clients regularly to understand their needs and provide suitable solutions.</li>
-              <li>Followed up consistently to build good relationships and hit sales goals.</li>
-              <li>Worked with teammates to improve sales approaches and find new clients.</li>
-            </ul>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Employment History (Streamlined & Focused) -->
+  <section class="section">
+    <div class="section-title">Work Experience</div>
+    <div class="section-content">
+      
+      <!-- Video Editor Freelance -->
+      <div class="item-block">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Video Editor</span>
+            <span class="item-role">Freelance</span>
           </div>
+          <span class="item-meta">Jul 2024 &mdash; Aug 2024</span>
         </div>
+        <ul class="item-bullets">
+          <li>Edited short-form commercial and promotional video content from assembly to final delivery, ensuring rapid turnaround and precise client feedback implementation.</li>
+        </ul>
+      </div>
+
+      <!-- Design Team Stun PC -->
+      <div class="item-block">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Design Team Specialist</span>
+            <span class="item-role">Stun PC Trading</span>
+          </div>
+          <span class="item-meta">Feb 2024</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Designed promotional digital visuals and platform banners, strengthening visual branding and user engagement across online channels.</li>
+        </ul>
       </div>
 
     </div>
@@ -330,7 +367,7 @@
         <span class="education-title">Diploma in Visual Effect</span>
         <span class="education-date">Aug 2022 &mdash; Aug 2026</span>
       </div>
-      <div class="education-school">The One Academy</div>
+      <div class="education-school">The One Academy, Malaysia</div>
     </div>
   </section>
 
@@ -341,9 +378,9 @@
     <div class="section-title">Languages</div>
     <div class="section-content">
       <div class="languages-grid">
-        <div class="lang-item"><span class="lang-name">Chinese</span> <span class="lang-level">Native</span></div>
-        <div class="lang-item"><span class="lang-name">Malay</span> <span class="lang-level">Basic</span></div>
-        <div class="lang-item"><span class="lang-name">English</span> <span class="lang-level">Conversational</span></div>
+        <div class="lang-item"><span class="lang-name">Chinese:</span> <span class="lang-level">Native</span></div>
+        <div class="lang-item"><span class="lang-name">English:</span> <span class="lang-level">Conversational</span></div>
+        <div class="lang-item"><span class="lang-name">Malay:</span> <span class="lang-level">Basic</span></div>
       </div>
     </div>
   </section>
