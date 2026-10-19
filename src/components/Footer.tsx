@@ -1,4 +1,5 @@
-import { Mail } from "lucide-react";
+import Link from "next/link";
+import { Mail, FileText } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -17,6 +18,10 @@ export default function Footer() {
 
         {/* Right: Social Links */}
         <div className="flex items-center gap-6">
+          <Link href="/resume" className="text-white/40 hover:text-white transition-colors duration-300 text-xs tracking-widest uppercase flex items-center gap-2">
+            <FileText className="w-4 h-4" />
+            <span>Resume</span>
+          </Link>
           <a href="mailto:weerou0304@gmail.com" className="text-white/40 hover:text-white transition-colors duration-300">
             <span className="sr-only">Email</span>
             <Mail className="w-5 h-5" />

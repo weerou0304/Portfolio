@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
-import { ArrowRight, Mail, Phone } from "lucide-react";
+import { ArrowRight, Mail, Phone, FileText, Download } from "lucide-react";
 import { useState, useRef } from "react";
 import { ReactLenis } from 'lenis/react';
 import { useRouter } from "next/navigation";
@@ -101,7 +101,7 @@ export default function Home() {
                 Hi, I'm Wee Rou. Welcome to my portfolio! I love bringing stories to life through digital compositing and visual effects. Feel free to scroll down and explore my work.
               </p>
 
-              <div className="flex flex-wrap items-center gap-6">
+              <div className="flex flex-wrap items-center gap-4 md:gap-6">
                 <button 
                   onClick={() => setIsLightboxOpen(true)}
                   className="group relative inline-flex items-center gap-4 px-8 py-4 bg-white text-black rounded-full overflow-hidden transition-transform hover:scale-105 duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]"
@@ -114,6 +114,14 @@ export default function Home() {
                   </div>
                   <span className="text-sm font-medium tracking-[0.2em] uppercase">Play Showreel</span>
                 </button>
+
+                <a 
+                  href="/resume"
+                  className="inline-flex items-center gap-3 px-6 py-4 rounded-full border border-white/20 text-sm font-light tracking-[0.2em] uppercase text-white/80 hover:text-white hover:border-white/50 hover:bg-white/5 transition-all"
+                >
+                  <FileText className="size-4" />
+                  Resume
+                </a>
                 
                 <a 
                   href="/about"
@@ -353,15 +361,15 @@ export default function Home() {
                 <div className="space-y-6">
                   <div className="flex flex-col md:flex-row md:justify-between md:items-center text-white/80 gap-2">
                     <span className="text-xl font-light">Chinese</span>
-                    <span className="text-white/40 text-xs tracking-widest uppercase">Native Speaker</span>
+                    <span className="text-white/40 text-xs tracking-widest uppercase">Native</span>
                   </div>
                   <div className="flex flex-col md:flex-row md:justify-between md:items-center text-white/80 gap-2">
                     <span className="text-xl font-light">English</span>
-                    <span className="text-white/40 text-xs tracking-widest uppercase">Very Good Command</span>
+                    <span className="text-white/40 text-xs tracking-widest uppercase">Conversational</span>
                   </div>
                   <div className="flex flex-col md:flex-row md:justify-between md:items-center text-white/80 gap-2">
                     <span className="text-xl font-light">Malay</span>
-                    <span className="text-white/40 text-xs tracking-widest uppercase">Very Good Command</span>
+                    <span className="text-white/40 text-xs tracking-widest uppercase">Basic</span>
                   </div>
                 </div>
               </motion.div>
@@ -373,7 +381,7 @@ export default function Home() {
                 transition={{ delay: 0.2 }}
               >
                 <h3 className="text-xs tracking-[0.5em] uppercase text-white/40 mb-12 border-b border-white/10 pb-4">Contact</h3>
-                <div className="space-y-10 text-white/70 font-light">
+                <div className="space-y-8 text-white/70 font-light">
                   <a 
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=weerou0304@gmail.com" 
                     target="_blank"
@@ -391,6 +399,15 @@ export default function Home() {
                     </div>
                     <span className="text-lg">012-6618172</span>
                   </div>
+                  <a 
+                    href="/resume"
+                    className="flex items-center gap-6 hover:text-white transition-colors group"
+                  >
+                    <div className="p-4 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors">
+                      <FileText className="size-5" />
+                    </div>
+                    <span className="text-lg">Curriculum Vitae / Resume</span>
+                  </a>
                 </div>
               </motion.div>
 
