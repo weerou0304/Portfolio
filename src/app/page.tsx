@@ -288,7 +288,7 @@ export default function Home() {
                   </div>
                   <h4 className="text-xl md:text-2xl font-light mb-1 text-white/80">Graduated from The One Academy</h4>
                   <ul className="space-y-2 text-white/50 text-sm font-light leading-relaxed list-disc list-outside ml-4 mt-3 max-w-2xl">
-                    <li>Completed Diploma in Visual Effect.</li>
+                    <li>Completed Diploma in Visual Effects.</li>
                   </ul>
                 </motion.div>
 
@@ -346,7 +346,7 @@ export default function Home() {
                 <h3 className="text-xs tracking-[0.5em] uppercase text-white/40 mb-12 border-b border-white/10 pb-4">Education</h3>
                 <h4 className="text-2xl font-light mb-2">The One Academy</h4>
                 <div className="text-white/50 text-sm tracking-widest uppercase mb-4">
-                  Diploma in Visual Effect
+                  Diploma in Visual Effects
                 </div>
                 
                 <h3 className="text-xs tracking-[0.5em] uppercase text-white/40 mb-8 mt-20 border-b border-white/10 pb-4">Languages</h3>
