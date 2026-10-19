@@ -165,10 +165,22 @@
     }
 
     /* Education */
-    .education-text {
+    .education-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
       font-size: 9.5pt;
+    }
+
+    .education-title {
+      font-weight: 600;
       color: #111;
+    }
+
+    .education-school {
+      color: #222;
       font-weight: 500;
+      text-align: right;
     }
 
     /* Languages */
@@ -308,7 +320,10 @@
   <section class="section">
     <div class="section-title">Education</div>
     <div class="section-content">
-      <div class="education-text">Diploma in Visual Effect</div>
+      <div class="education-header">
+        <span class="education-title">Diploma in Visual Effect</span>
+        <span class="education-school">The One Academy</span>
+      </div>
     </div>
   </section>
 
