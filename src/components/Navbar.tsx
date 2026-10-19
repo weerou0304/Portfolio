@@ -15,7 +15,6 @@ const navItems = [
   { name: "CFX", path: "/cfx" },
   { name: "FX", path: "/fx" },
   { name: "About Me", path: "/about" },
-  { name: "Resume", path: "/resume" },
 ];
 
 export function Navbar() {
