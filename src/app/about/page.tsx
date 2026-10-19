@@ -74,10 +74,8 @@ export default function AboutPage() {
 
             <a 
               href="/resume.pdf"
-              onClick={(e) => {
-                e.preventDefault();
-                alert("Resume document is not uploaded yet. You can replace '/public/resume.pdf' when ready!");
-              }}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-6 p-2 pr-8 rounded-full bg-transparent hover:bg-white/5 border border-white/10 hover:border-white/30 transition-all duration-300"
             >
               <div className="p-4 rounded-full bg-black/50 text-white border border-white/20 group-hover:bg-white group-hover:text-black group-hover:scale-110 transition-all duration-300">

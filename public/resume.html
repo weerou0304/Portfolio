@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tan Wee Rou - Compositor Resume</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 18mm 18mm 18mm 18mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #1a1a1a;
+      background-color: #ffffff;
+      line-height: 1.45;
+      font-size: 10.5pt;
+      -webkit-font-smoothing: antialiased;
+      width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    .header h1 {
+      font-size: 17pt;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 8px;
+      color: #111;
+    }
+
+    .header .contact-info {
+      font-size: 9pt;
+      color: #222;
+      line-height: 1.4;
+    }
+
+    .header .contact-info a {
+      color: #111;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .divider {
+      width: 100%;
+      height: 1px;
+      background-color: #222;
+      margin: 12px 0;
+    }
+
+    .section {
+      display: flex;
+      align-items: flex-start;
+      margin: 11px 0;
+    }
+
+    .section-title {
+      width: 26%;
+      font-size: 9.5pt;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #111;
+      padding-right: 15px;
+      flex-shrink: 0;
+    }
+
+    .section-content {
+      width: 74%;
+      flex-grow: 1;
+    }
+
+    /* About Me */
+    .about-text {
+      font-size: 9.5pt;
+      line-height: 1.5;
+      color: #222;
+      text-align: justify;
+    }
+
+    /* Areas of Expertise */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px 30px;
+      font-size: 9.5pt;
+      color: #222;
+    }
+
+    /* Employment History */
+    .job-item {
+      margin-bottom: 11px;
+    }
+
+    .job-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .job-date {
+      width: 28%;
+      font-size: 9pt;
+      color: #222;
+      flex-shrink: 0;
+    }
+
+    .job-details {
+      width: 72%;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .job-title {
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .job-location {
+      font-size: 9pt;
+      color: #333;
+      text-align: right;
+    }
+
+    .job-bullets {
+      list-style-type: disc;
+      padding-left: 18px;
+      margin-top: 3px;
+    }
+
+    .job-bullets li {
+      font-size: 9pt;
+      line-height: 1.45;
+      color: #2b2b2b;
+      margin-bottom: 2px;
+    }
+
+    /* Education */
+    .education-text {
+      font-size: 9.5pt;
+      color: #111;
+      font-weight: 500;
+    }
+
+    /* Languages */
+    .languages-grid {
+      display: grid;
+      grid-template-columns: auto 1fr auto 1fr;
+      gap: 6px 16px;
+      font-size: 9pt;
+      align-items: baseline;
+      width: 100%;
+    }
+
+    .lang-name {
+      font-weight: 500;
+      color: #111;
+    }
+
+    .lang-level {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Tan Wee Rou, Compositor</h1>
+    <div class="contact-info">
+      12, Jalan SH 3, Kajang 43000, Malaysia &nbsp;&bull;&nbsp; 
+      012-6618172 &nbsp;&bull;&nbsp; 
+      <a href="mailto:weerou0304@gmail.com">weerou0304@gmail.com</a> &nbsp;&bull;&nbsp; 
+      <a href="https://portfolio-wee-rou.vercel.app/" target="_blank">portfolio-wee-rou.vercel.app</a>
+    </div>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- About Me -->
+  <section class="section">
+    <div class="section-title">About Me</div>
+    <div class="section-content">
+      <p class="about-text">
+        Visual Effects graduate passionate about compositing and visual storytelling. Skilled in NukeX, Maya, and Houdini through hands-on project experience. A good team player who is always eager to learn, improve, and bring creative ideas to life on screen.
+      </p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Areas of Expertise -->
+  <section class="section">
+    <div class="section-title">Areas of Expertise</div>
+    <div class="section-content">
+      <div class="skills-grid">
+        <div>Houdini</div>
+        <div>NukeX</div>
+        <div>Maya</div>
+        <div>Premiere Pro</div>
+        <div>After Effects</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Employment History -->
+  <section class="section">
+    <div class="section-title">Employment History</div>
+    <div class="section-content">
+      
+      <!-- Stun PC Trading -->
+      <div class="job-item">
+        <div class="job-row">
+          <div class="job-date">Feb 2024</div>
+          <div class="job-details">
+            <div class="job-header">
+              <span class="job-title">Design Team, Stun PC Trading</span>
+              <span class="job-location">Subang Jaya</span>
+            </div>
+            <ul class="job-bullets">
+              <li>Designed banners and branding visuals for online platforms.</li>
+              <li>Helped build brand identity and improved overall brand awareness.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Freelance Video Editor -->
+      <div class="job-item">
+        <div class="job-row">
+          <div class="job-date">Jul 2024 &mdash; Aug 2024</div>
+          <div class="job-details">
+            <div class="job-header">
+              <span class="job-title">Video Editor, Freelance</span>
+              <span class="job-location">Subang Jaya</span>
+            </div>
+            <ul class="job-bullets">
+              <li>Created short-form promo and social media videos from start to finish.</li>
+              <li>Communicated with clients to understand their needs and adjusted videos based on feedback.</li>
+              <li>Handled multiple projects at the same time and always delivered on time.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Propnex Realty -->
+      <div class="job-item">
+        <div class="job-row">
+          <div class="job-date">Jan 2023 &mdash; Jul 2023</div>
+          <div class="job-details">
+            <div class="job-header">
+              <span class="job-title">Sales Executive, Propnex Realty</span>
+              <span class="job-location">Cheras</span>
+            </div>
+            <ul class="job-bullets">
+              <li>Talked with clients regularly to understand their needs and provide suitable solutions.</li>
+              <li>Followed up consistently to build good relationships and hit sales goals.</li>
+              <li>Worked with teammates to improve sales approaches and find new clients.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Education -->
+  <section class="section">
+    <div class="section-title">Education</div>
+    <div class="section-content">
+      <div class="education-text">Diploma in Visual Effect</div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Languages -->
+  <section class="section">
+    <div class="section-title">Languages</div>
+    <div class="section-content">
+      <div class="languages-grid">
+        <span class="lang-name">Chinese</span>
+        <span class="lang-level">Native speaker</span>
+        <span class="lang-name">Malay</span>
+        <span class="lang-level">Very good command</span>
+        <span class="lang-name">English</span>
+        <span class="lang-level">Very good command</span>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
